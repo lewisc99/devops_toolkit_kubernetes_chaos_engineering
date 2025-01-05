@@ -1,6 +1,9 @@
 # Get the ingress resources in the go-demo-8 namespace
 kubectl --namespace go-demo-8 get ingress
 
+# Download ingress-nginx
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.0/deploy/static/provider/cloud/deploy.yaml
+
 # Enable the ingress addon in Minikube
 minikube addons enable ingress
 
